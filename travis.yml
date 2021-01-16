@@ -1,0 +1,12 @@
+language: java
+jdk: 
+- openjdk8 
+
+addons:
+ sonarcloud:
+  organization: "LeonardoMonnati96"
+  token: "6409ccae518676afaf4d75d960ac665b42d0a9e1"
+  
+script: 
+- ant build
+- sonar-scanner
